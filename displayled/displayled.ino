@@ -23,9 +23,15 @@ void display(int d1, int d2, int d3, int d4, int d5) {
 }
 
 void loop() {
-   display(HIGH, LOW, HIGH, LOW, HIGH);
+   display(HIGH, LOW, LOW, LOW, LOW);
    delay(WAIT);
-   display(LOW, HIGH, LOW, HIGH, LOW);
+   display(LOW, HIGH, LOW, LOW, LOW);
+   delay(WAIT);
+   display(LOW, LOW, HIGH, LOW, LOW);
+   delay(WAIT);
+   display(LOW, LOW, LOW, HIGH, LOW);
+   delay(WAIT);
+   display(LOW, LOW, LOW, LOW, HIGH);
    delay(WAIT);
 }
 
